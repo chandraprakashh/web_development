@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color: #668566">
+	<center>
+	<p>Special Lunch</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+var day;
+switch (new Date().getDay()){
+	case 0:
+	day = "sunday" + "<br>"  + "off";
+	break;
+	case 1:
+	day = "monday" + "<br>" + "1.Rice" + "<br>" + "2.Roti" + "<br>" + "3.Dall" + "<br>" + "4.Sllad" + "<br>" + "5.Lassi";
+	break;
+	case 2:
+	day = "tuseday"  + "<br>" + "1.Roti" + "<br>" + "2.Dhi" + "<br>" + "3.Dall" + "<br>" + "4.Sbji" + "<br>" + "5.Lassi"; 
+	break;
+	case 3:
+	day = "wednesday" + "<br>" + "1.Rice" + "<br>" + "2.Roti" + "<br>" + "3.Dall" + "<br>" + "4.Sllad" + "<br>" + "5.Lassi";
+	break;
+	case 4:
+	day = "thursday" + "<br>" + "1.Roti" + "<br>" + "2.Dhi" + "<br>" + "3.Dall" + "<br>" + "4.Sbji" + "<br>" + "5.Lassi"; 
+	break; 
+	case 5:
+	day = "friday"  + "<br>" + "1.Rice" + "<br>" + "2.Roti" + "<br>" + "3.Dall" + "<br>" + "4.Sllad" + "<br>" + "5.Lassi";
+	break;
+	case 6:
+	day = "saturday" + "<br>" + "1.Roti" + "<br>" + "2.Dhi" + "<br>" + "3.Dall" + "<br>" + "4.Sbji" + "<br>" + "5.Lassi"; 
+}
+document.getElementById("demo").innerHTML = "Today is" + " " + day ;
+
+</script>
+<hr>
+</center>	
+
+</body>
+</html>

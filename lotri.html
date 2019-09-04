@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color: 	#ffe6ff">
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<center>	
+<script type="text/javascript">
+var n = Number(prompt('enter your number between 1 to 5'));
+ 
+var t =	document.getElementById("demo").innerHTML = Math.floor(Math.random() * 5 );
+
+ 
+  if (n === t) 
+  {
+  	 document.getElementById("demo1").innerHTML =   "you won the match" + " " + "," + "your number is" + " " + n + "<br>" + "<br>"+ "Congratulation" + " " + "sir";
+  } else
+
+  {
+     document.getElementById("demo2").innerHTML =  "Sorry"  + ", " + "you los the match" + " " + "," + "your number is" +  " " +  n;
+  }
+  
+</script>
+</center>
+
+</body>
+</html>

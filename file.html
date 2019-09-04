@@ -1,0 +1,266 @@
+<html>
+<head>
+<title> bsdu </title>
+</head>
+<body>
+<h2>HTML Forms</h2>
+<!-------------------------------------------------forms---------------------------------------------->
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+<form>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+</form> 
+<form>
+  <input type="checkbox" name="gender" value="male" checked> Male<br>
+  <input type="checkbox" name="gender" value="female"> Female<br>
+  <input type="checkbox" name="gender" value="other"> Other  
+</form> 
+
+<form action="/action_page.php">
+<fieldset>
+name:      -<input type= "text" name="name"><br><br>
+father name:-<input type= "text" name="father"><br><br>
+phone number:<input type="text" name="phone"><br>
+<input type="submit" value="submit">
+</fieldset>
+</form>
+
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<!----------------------------------------------froms elements--------------------------------------------->
+<select size="4">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+  <option value="chandra prakash">chandraprakash</option>
+   
+</select>
+
+
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="5" cols="8">The cat was playing in the garden.</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+
+
+<form action="/action_page.php>
+  User name:<br>
+  <input type="text" name="username"><br>
+  User password:<br>
+  <input type="password" name="psw">
+  <input type="submit">
+</form
+
+<h2>Input Button</h2>
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+<!--------------------------------------------------------input types--------------------------------------------->
+
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+</form>
+
+
+
+
+
+
+<form>
+  Select your favorite color:
+  <input type="color" name="favcolor">
+</form>
+
+
+
+<form>
+  Birthday:
+  <input type="date" name="bday">
+</form>
+
+
+<form>
+  Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+</form>
+
+
+<form>
+  E-mail:
+  <input type="email" name="email">
+</form>
+
+
+
+<form>
+  Select a file: <input type="file" name="myFile">
+</form>
+
+
+
+<form>
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+</form>
+
+
+
+<form>
+  <input type="range" name="points" min="0" max="10">
+</form>
+
+
+
+<form>
+  Search Google:
+  <input type="search" name="googlesearch">
+</form>
+
+
+
+<form>
+  Telephone:
+  <input type="tel" name="phone" pattern="4984654984">
+</form>
+
+
+
+<form>
+  Select a time:
+  <input type="time" name="usr_time">
+</form>
+
+
+
+<form>
+  Select a week:
+  <input type="week" name="week_year">
+</form>
+
+
+
+<form action="/action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset">
+</form> 
+
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+<!------------------------------------------------------------------input attributes------------------------->
+
+<form action="">
+First name:<br>
+<input type="text" name="firstname" value ="John" disabled>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+
+
+<form action="/action_page.php">
+  First name:<input type="text" name="fname" autofocus><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit">
+</form>
+
+
+
+<form action="/action_page.php">
+  <input type="number" name="points" step="3">
+  <input type="submit">
+</form>
+
+
+
+<form action="/action_page.php">
+  <input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name"><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+
+<form action="/action_page.php">
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  <input type="submit">
+</form>
+
+
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+
+
+
+//----------------------------------------pra----------------------------------------------------------------------------		
+		<!-- Begin
+					msg = new Array("Practicing with your typing can greatly help your overall computer skills.",
+										"A new computer is sold in the US every hour!",
+										"When do birds migrate from North to South?",
+										"Perplexing phrases, like this one, are tougher to type.")
+						word = 10
+					function pra1() {
+					msg = new Array("Practicing with your typing can greatly help your overall computer skills.",
+										"A new computer is sold in the US every hour!",
+										"When do birds migrate from North to South?",
+										"Perplexing phrases, like this one, are tough to type.")
+						word = 10
+					}
+					function pra2() {
+					msg = new Array("If you can correctly, and quickly, type this perplexing sentence, you are one superb typist!",
+										"You are one superb typist if you can correctly, and quickly, type this long phrase.",
+										"I believe you're a good typist, so I believe you will correctly copy this statement!",
+										"Because this is not a fairly simple phrase, could you swiftly, and precisely, copy it?")
+						word = 15
+					}
+					function pra3() {
+					msg = new Array("Computers are the medium of the future.",
+										"Can you type this phrase rather quickly?",
+										"Who is the President of the US?",
+										"I believe that you can type well!")
+						word = 7
+					} 
+
+					function pra4() {
+					msg = new Array("Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document.")
+						word = 47
+					}
+
+//------------------------------------- function-------------------------------------------------
+					function beginIt() {
+						randNum = Math.floor((Math.random() * 10)) % 5
+						msgType = msg[randNum]
+						day = new Date();
+						startType = day.getTime();
+						document.theForm.given.value = msgType
+						document.theForm.typed.focus();
+						document.theForm.typed.select();
+						}
+//------------------------------------cheat--------------------------------------------------------						
+
+						function cheat() {
+						alert("You can not change that!");
+						document.theForm.typed.focus();
+						}
+//------------------------------------stopIt---------------------------------------------------------
+
+						function stopIt() {
+						dayTwo = new Date();
+						endType = dayTwo.getTime();
+						totalTime = ((endType - startType) / 1000)
+						spd = Math.round((word/totalTime) * 89)
+
+
+//----------------------------------condition--------------------------------------------------------						
+						if (document.theForm.typed.value == document.theForm.given.value) {
+						alert("\nYou typed a " + word + " word sentence in "
+						+ totalTime + " seconds, a speed of about " + spd + " words per seconds!")
+						}
+						else {
+						alert("You made an error, but typed at a speed of " + spd + " words per seconds.")
+						   }
+						}
+// End -->
+</script>
+</head>
+<body style="background-color:  	#663300">
+<center>
+	<form name="theForm">
+		<table border= 15 solid  cellspacing= 0 cellpadding= 0 style="background-color: #c65353">
+
+			<tr>
+			<td>
+				<img src="5images.jfif" alt="img" height="160px;">
+			</td>
+			<td>
+				<iframe width="300" height="158" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</iframe>  
+			</td>
+			</tr>
+			<tr>
+				<td style="color: white">
+					Are you Ready....
+				</td>
+				<td align=center style="color: white"><input type=radio name="sme" value="Beginner" onClick="pra1()" checked>Beginner
+					<input type=radio name="sme" value="Novice" onClick="pra2()">Novice
+                    <input type=radio name="sme" value="Expert" onClick="pra3()">Expert
+                    <input type=radio name="sme" value="Expert" onClick="pra4()">Pragraph
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><br>	
+						<p style="position: relative; margin-left: 70px; font-size: 20px; font-family: Viner Hand ITC;"><b><i><u>Typing master</u></i></b></p>
+						<center><button type="button" class="btn btn-outline-success" onclick="beginIt()" style=" position: relative; bottom: 40px;">Start Type Latters</button></center>
+						<div id="demo" style="margin-left: 450px; position: relative; bottom: 77px;">
+						<a href="https://www.typingstudy.com/lesson/1/part/2">
+						<button type="button" class="btn btn-outline-warning">online</button></a>
+						<button type="button" class="btn btn-outline-info">offline</button></div>
+ 
+					<center><textarea style="width: 600px; height: 200px; font-size: 40px; border: 25px solid #ff949f;  position: relative; bottom: 50px; color: orange; font-family: times new roman;" name="given" cols=53 rows=3 wrap=on onFocus="cheat()"></textarea></center></TD>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+			<center><input type=text name="typed" style="height: 50px; width: 500px; margin: 10px; font-size: 30px; border: 5px solid #660033; color: green; font-family: times new roman;">				
+				 <button  type="button" class="btn btn-outline-secondary" onclick="stopIt()" style="position: relative; bottom: 5px; font-size: 20px;">Done</button>
+			</center>
+				</td>				
+			</tr>
+		</table>
+	</form>
+</center>
+
+
+</body>
+</html>

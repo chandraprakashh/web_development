@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+	
+<script type="text/javascript">
+var n = Number(prompt('enter the number'));
+
+var t =	document.getElementById("demo").innerHTML = "computer Number is ::::" + " " + Math.floor(Math.random() * 10);
+ 
+  if (n === t) 
+  {
+  	 document.getElementById("demo1").innerHTML =   "you won the match";
+  } else
+
+  {
+     document.getElementById("demo2").innerHTML =  "you los the match";
+  }
+  
+</script>
+
+</body>
+</html>
